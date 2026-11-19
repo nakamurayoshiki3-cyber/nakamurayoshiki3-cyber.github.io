@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>ポートフォリオ | 北アルプスメディア — SNS運用・動画制作</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f7f7f7;
+  --ink:#0a0a0a;
+  --ink-2:#4a4a4a;
+  --ink-3:#8a8a8a;
+  --line:#e6e6e6;
+  --line-dark:#0a0a0a;
+  --black:#0a0a0a;
+  --white:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0a0a0a;
+    --bg-soft:#141414;
+    --ink:#ffffff;
+    --ink-2:#c8c8c8;
+    --ink-3:#8f8f8f;
+    --line:#262626;
+    --line-dark:#ffffff;
+    --black:#ffffff;
+    --white:#0a0a0a;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP",system-ui,-apple-system,sans-serif;line-height:1.9;-webkit-font-smoothing:antialiased;font-size:17px}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{width:min(1040px,100% - 48px);margin:0 auto}
+@media(max-width:560px){.wrap{width:calc(100% - 40px)}}
+
+/* HEADER */
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.brand{font-weight:900;letter-spacing:.04em;font-size:15px;line-height:1;white-space:nowrap}
+.brand small{display:block;font-family:Inter,sans-serif;font-weight:600;font-size:10px;letter-spacing:.22em;color:var(--ink-3);margin-bottom:6px}
+.nav{display:flex;gap:28px;flex-wrap:wrap}
+.nav a{font-size:13px;font-weight:700;letter-spacing:.08em;text-decoration:none;color:var(--ink-2)}
+.nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+@media(max-width:640px){.nav{gap:16px}.nav a{font-size:12px}}
+
+/* HERO */
+.hero{padding:72px 0 64px}
+@media(max-width:640px){.hero{padding:48px 0 44px}}
+.hero-eyebrow{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.28em;color:var(--ink-3);margin:0 0 28px}
+.hero h1{font-size:clamp(44px,8vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:900;margin:0 0 28px}
+.hero h1 span{display:block}
+.hero-sub{font-size:15px;font-weight:700;letter-spacing:.06em;margin:0 0 18px}
+.hero-sub b{background:var(--ink);color:var(--bg);padding:3px 10px;margin-right:10px;font-size:13px;letter-spacing:.08em}
+.lead{font-size:17.5px;line-height:2;color:var(--ink-2);max-width:36em;margin:0}
+.lead strong{color:var(--ink)}
+.hero-meta{margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--ink-2)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--line-dark);border-bottom:1px solid var(--line);margin-top:48px}
+.stat{padding:24px 20px 22px 0}
+.stat + .stat{border-left:1px solid var(--line);padding-left:20px}
+.stat b{display:block;font-size:20px;line-height:1.3;letter-spacing:-.01em;margin-bottom:6px}
+.stat span{font-size:13px;line-height:1.7;color:var(--ink-2);display:block}
+@media(max-width:640px){.hero-stats{grid-template-columns:1fr}.stat + .stat{border-left:none;border-top:1px solid var(--line);padding-left:0}.stat{padding:18px 0}}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 26px;font-weight:800;font-size:14px;letter-spacing:.06em;text-decoration:none;border:1.5px solid var(--ink)}
+.btn-black{background:var(--ink);color:var(--bg)}
+.btn-black:hover{opacity:.82}
+.btn-white{background:transparent;color:var(--ink)}
+.btn-white:hover{background:var(--bg-soft)}
+.hp-btn{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:20px 26px;margin-top:34px;border:1.5px solid var(--ink)}
+.hp-btn:hover{opacity:.85}
+.hp-btn .hp-label{font-weight:900;font-size:17px;letter-spacing:.04em;line-height:1.4}
+.hp-btn .hp-label small{display:block;font-family:Inter,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.24em;opacity:.6;margin-bottom:3px}
+.hp-btn .hp-arrow{font-size:24px;line-height:1;flex:none}
+@media(max-width:640px){.hp-btn{padding:18px 20px}.hp-btn .hp-label{font-size:15.5px}}
+
+/* SECTIONS */
+section{padding:72px 0;border-top:1px solid var(--line)}
+@media(max-width:640px){section{padding:52px 0}}
+.sec-label{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.28em;color:var(--ink-3);margin:0 0 12px;text-transform:uppercase}
+.sec-head h2{font-size:clamp(30px,5vw,44px);line-height:1.15;letter-spacing:-.02em;font-weight:900;margin:0 0 14px}
+.sec-head p{color:var(--ink-2);margin:0;max-width:40em;font-size:16px;line-height:1.9}
+
+/* INTRO */
+.intro-lead{font-size:clamp(22px,3.2vw,30px);line-height:1.5;font-weight:900;letter-spacing:-.01em;margin:28px 0 24px;max-width:18em}
+.intro-body{max-width:42em}
+.intro-body p{color:var(--ink-2);margin:0 0 18px;line-height:2}
+.intro-body p strong{color:var(--ink)}
+.intro-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);margin-top:36px}
+.intro-fact{padding:22px}
+.intro-fact + .intro-fact{border-left:1px solid var(--line)}
+.intro-fact b{display:block;font-size:16px;line-height:1.4;margin-bottom:8px}
+.intro-fact span{font-size:13.5px;color:var(--ink-2);line-height:1.75;display:block}
+@media(max-width:760px){.intro-facts{grid-template-columns:1fr}.intro-fact + .intro-fact{border-left:none;border-top:1px solid var(--line)}}
+.text-links{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:28px}
+.text-links a{font-size:14px;font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.text-links a:hover{opacity:.6}
+.intro-list{list-style:none;margin:32px 0 0;padding:0;border-top:2px solid var(--line-dark);max-width:42em}
+.intro-list li{position:relative;padding:16px 0 16px 26px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.8;color:var(--ink-2)}
+.intro-list li::before{content:"—";position:absolute;left:0;top:16px;color:var(--ink);font-weight:800}
+.intro-list li strong{color:var(--ink);font-weight:800}
+.intro-list li a{font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:1px;color:var(--ink)}
+.intro-list li a:hover{opacity:.6}
+
+/* PICKUP - black block */
+.pickup{background:#0a0a0a;color:#fff;margin:40px -24px 0;padding:40px 36px 8px}
+@media(prefers-color-scheme:dark){.pickup{background:#fff;color:#0a0a0a}}
+@media(max-width:640px){.pickup{margin-left:-20px;margin-right:-20px;padding:32px 20px 4px}}
+.pickup .sec-label{color:#9a9a9a}
+@media(prefers-color-scheme:dark){.pickup .sec-label{color:#6b6b6b}}
+.pickup h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:0 0 10px;font-weight:900;letter-spacing:-.02em}
+.pickup-lead{color:#bdbdbd;font-size:15px;line-height:1.85;margin:0;max-width:38em}
+@media(prefers-color-scheme:dark){.pickup-lead{color:#444}}
+.pick-list{margin-top:32px;border-top:1px solid #2a2a2a}
+@media(prefers-color-scheme:dark){.pick-list{border-top-color:#e0e0e0}}
+.pick-item{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:start;padding:26px 0;border-bottom:1px solid #2a2a2a;text-decoration:none;color:inherit}
+@media(prefers-color-scheme:dark){.pick-item{border-bottom-color:#e0e0e0}}
+.pick-item:hover h3{text-decoration:underline;text-underline-offset:5px}
+.pick-no{font-family:Inter,sans-serif;font-size:28px;font-weight:800;line-height:1;color:#fff}
+@media(prefers-color-scheme:dark){.pick-no{color:#0a0a0a}}
+.pick-item h3{font-size:19px;line-height:1.55;margin:0 0 8px;font-weight:800}
+.pick-item p{font-size:14px;line-height:1.8;color:#bdbdbd;margin:0 0 10px;max-width:36em}
+@media(prefers-color-scheme:dark){.pick-item p{color:#555}}
+.pick-tags{font-size:12px;font-weight:700;letter-spacing:.04em;color:#8f8f8f}
+.pick-arrow{font-size:22px;line-height:1;padding-top:4px}
+@media(max-width:640px){.pick-item{grid-template-columns:44px 1fr}.pick-arrow{display:none}.pick-no{font-size:22px}}
+
+/* WORKS */
+.works-title{font-size:13px;font-weight:800;letter-spacing:.18em;margin:56px 0 0;padding-bottom:14px;border-bottom:2px solid var(--line-dark)}
+.work{padding:36px 0 8px;border-bottom:1px solid var(--line)}
+.work:last-child{border-bottom:none}
+.work-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.work-head h3{font-size:22px;line-height:1.35;margin:0 0 10px;font-weight:900;letter-spacing:-.01em}
+.work-head p{color:var(--ink-2);font-size:15px;line-height:1.9;margin:0;max-width:40em}
+.tag{font-size:11px;font-weight:800;letter-spacing:.1em;border:1px solid var(--ink);padding:6px 10px;white-space:nowrap;line-height:1}
+.ig-link{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.note-box{margin:22px 0 6px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.note-box strong{font-size:15px;display:block;margin-bottom:6px}
+.note-box p{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.85}
+.reel-list{margin-top:20px;border-top:1px solid var(--line)}
+.reel{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.reel:hover h4{text-decoration:underline;text-underline-offset:4px}
+.reel h4{font-size:16px;line-height:1.6;margin:0;font-weight:700}
+.reel small{display:block;font-size:12.5px;color:var(--ink-3);font-weight:600;margin-top:3px;letter-spacing:.02em}
+.reel-arrow{font-size:20px;flex:none;color:var(--ink-3)}
+.small-note{font-size:13px;color:var(--ink-3);margin:16px 0 0}
+
+/* SERVICE */
+.svc-list{border-top:2px solid var(--line-dark);margin-top:32px}
+.svc-row{display:grid;grid-template-columns:80px 180px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start}
+.svc-row .num{font-family:Inter,sans-serif;font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--ink-3);padding-top:4px}
+.svc-row h3{font-size:20px;margin:0;font-weight:900}
+.svc-row p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.9}
+@media(max-width:700px){.svc-row{grid-template-columns:52px 1fr}.svc-row p{grid-column:2}}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:8px}
+@media(max-width:700px){.detail-grid{grid-template-columns:1fr}}
+.detail{padding:20px 0;border-bottom:1px solid var(--line)}
+.detail b{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-3);display:block;margin-bottom:6px}
+.detail h4{font-size:16px;margin:0 0 6px}
+.detail p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.8}
+.genre-line{margin-top:28px;font-size:14px;font-weight:800;letter-spacing:.04em;line-height:2;color:var(--ink-2)}
+.genre-line span{color:var(--ink)}
+.genre-line i{font-style:normal;color:var(--ink-3);margin:0 8px}
+
+/* FLOW */
+.flow-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px;margin-top:32px}
+@media(max-width:760px){.flow-list{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.flow-list{grid-template-columns:1fr}}
+.flow-item{border-top:2px solid var(--ink);padding-top:14px}
+.flow-item b{font-family:Inter,sans-serif;font-size:12px;letter-spacing:.16em;color:var(--ink-3)}
+.flow-item h3{font-size:16px;margin:6px 0 4px}
+.flow-item p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.75}
+
+/* PROFILE */
+.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:760px){.profile-grid{grid-template-columns:1fr}}
+.profile-grid p{color:var(--ink-2);margin:0;line-height:2;font-size:16px}
+.profile-table{border-top:2px solid var(--line-dark)}
+.profile-table div{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.profile-table dt{font-weight:800;min-width:88px;color:var(--ink-3);font-size:13px;letter-spacing:.04em;padding-top:2px;flex:none}
+.profile-table dd{margin:0;font-weight:600}
+.profile-table a{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+
+/* CONTACT */
+.contact{background:#0a0a0a;color:#fff;padding:56px 36px;margin:16px -24px 0;text-align:left}
+@media(prefers-color-scheme:dark){.contact{background:#fff;color:#0a0a0a}}
+@media(max-width:640px){.contact{margin-left:-20px;margin-right:-20px;padding:40px 20px}}
+.contact .sec-label{color:#9a9a9a}
+@media(prefers-color-scheme:dark){.contact .sec-label{color:#6b6b6b}}
+.contact h2{font-size:clamp(26px,4.5vw,38px);line-height:1.3;margin:0 0 14px;font-weight:900;letter-spacing:-.02em;max-width:16em}
+.contact p{color:#bdbdbd;margin:0 0 28px;max-width:36em;font-size:15.5px;line-height:1.9}
+@media(prefers-color-scheme:dark){.contact p{color:#444}}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn-solid{background:#fff;color:#0a0a0a;border-color:#fff}
+@media(prefers-color-scheme:dark){.contact .btn{border-color:#0a0a0a;color:#0a0a0a}.contact .btn-solid{background:#0a0a0a;color:#fff}}
+.contact-meta{font-size:13px;color:#8f8f8f;margin-top:20px;letter-spacing:.02em}
+.footer{padding:28px 0 40px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-3);letter-spacing:.04em}
+.footer a{font-weight:700;color:var(--ink-2);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <div class="brand"><small>KITA ALPS MEDIA</small>北アルプスメディア</div>
+    <nav class="nav" aria-label="ページ内リンク">
+      <a href="#intro">自己紹介</a>
+      <a href="#works">実績</a>
+      <a href="#service">サービス</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-eyebrow">PORTFOLIO — NAGANO, OMACHI</p>
+    <p class="hero-sub"><b>SNS運用 ・ 動画制作</b> 中村 ／ 北アルプスメディア（長野県大町市）・フリーランス</p>
+    <h1><span>人の魅力が、</span><span>伝わる動画を。</span></h1>
+    <p class="lead">長野県大町市を拠点にフリーランスで活動しています。<strong>SNS運用代行を軸に、動画制作・Web制作・MEO対策</strong>まで対応。現在は<strong>法人3社と契約中</strong>で、採用動画・SNSリール・会社紹介動画を継続制作しています。</p>
+    <a class="hp-btn" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">
+      <span class="hp-label"><small>OFFICIAL SITE — kitaalps-media.jp</small>北アルプスメディア 公式ホームページ</span>
+      <span class="hp-arrow">→</span>
+    </a>
+    <div class="hero-meta"><span>長野県大町市拠点</span><span>法人 3社契約中</span><span>SNS運用</span><span>Web制作</span><span>MEO対策</span></div>
+    <div class="cta-row">
+      <a class="btn btn-black" href="#works">実績を見る →</a>
+      <a class="btn btn-white" href="#contact">相談する</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>法人 3社契約中</b><span>企業のSNS運用・動画制作を継続支援しています</span></div>
+      <div class="stat"><b>自社でも運用中</b><span>@yoshiki_sns.nagano で企画・運用</span></div>
+      <div class="stat"><b>いいね 5,200超</b><span>自社メディアの参加型リール／長野県民向けコンテンツ</span></div>
+    </div>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <section id="intro">
+    <p class="sec-label">01 — Introduction</p>
+    <div class="sec-head"><h2>自己紹介</h2></div>
+    <p class="intro-lead">現場の人の魅力を、そのまま届く形に。</p>
+    <div class="intro-body">
+      <p>長野県大町市を拠点に、フリーランスでSNS運用代行を行っている<strong>北アルプスメディアの中村</strong>です。企業の採用動画・SNSリール・会社紹介動画を中心に、企画・台本作成から撮影・編集・投稿代行まで一貫して対応しています。</p>
+    </div>
+    <ul class="intro-list">
+      <li><strong>法人3社と契約中</strong></li>
+      <li>自社Instagramアカウント運用中（<a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a>）</li>
+      <li><strong>対応領域：</strong>SNS運用／Web制作／MEO対策</li>
+      <li><strong>編集ソフト：</strong>Premiere Pro／CapCut</li>
+      <li><strong>稼働時間：</strong>平日3日〜／1日6時間〜（目安）</li>
+    </ul>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works">
+    <p class="sec-label">02 — Works</p>
+    <div class="sec-head">
+      <h2>実績</h2>
+      <p>代表作3本をまとめています。各項目から、実際に公開されているInstagramの動画をご覧いただけます。</p>
+    </div>
+
+    <div class="pickup">
+      <p class="sec-label">Pick Up</p>
+      <h2>まず見てほしい、3本</h2>
+      <p class="pickup-lead">採用の現場の声、未経験から始めた先輩、そして街の人が参加する企画。作風の違いが分かる代表作です。</p>
+      <div class="pick-list">
+        <a class="pick-item" href="https://www.instagram.com/reel/Dd8qDg6MWi3/" target="_blank" rel="noopener">
+          <span class="pick-no">01</span>
+          <div>
+            <h3>「長野で、長く働きたい人へ。」</h3>
+            <p>日特工業株式会社の採用動画シリーズ代表作。長野で働くことの魅力を、現場の言葉で伝える1本です。</p>
+            <span class="pick-tags">採用動画 ／ 日特工業株式会社 ／ @nittoku_kogyo_omachi</span>
+          </div>
+          <span class="pick-arrow">→</span>
+        </a>
+        <a class="pick-item" href="https://www.instagram.com/reel/DfWxLHCSa4r/" target="_blank" rel="noopener">
+          <span class="pick-no">02</span>
+          <div>
+            <h3>「この機械、実は300万円。使っている先輩も、最初は未経験でした。」</h3>
+            <p>増田登記測量事務所（マッソク）の採用動画。測量機器と、未経験スタートの先輩を紹介します。</p>
+            <span class="pick-tags">採用動画 ／ 増田測量 ／ @massoku</span>
+          </div>
+          <span class="pick-arrow">→</span>
+        </a>
+        <a class="pick-item" href="https://www.instagram.com/reel/DZ9ul5UJoX9/" target="_blank" rel="noopener">
+          <span class="pick-no">03</span>
+          <div>
+            <h3>「『自由に撮ってOKな写るんです』を穂高駅に置いてみた」</h3>
+            <p>駅にカメラを置く参加型の実験企画リール。通りかかった人の一瞬が集まる、自社メディアならではの企画です。</p>
+            <span class="pick-tags">参加型企画 ／ いいね 4,000超 ・ コメント 97件 ／ @yoshiki_sns.nagano</span>
+          </div>
+          <span class="pick-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <p class="sec-label">03 — Service</p>
+    <div class="sec-head">
+      <h2>できること</h2>
+      <p>SNS運用 ／ Web制作 ／ MEO対策。対応領域は3つです。単発の動画1本から、毎月の継続運用まで。必要な領域だけのご依頼も可能です。</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc-row"><span class="num">01</span><h3>SNS運用</h3><p>戦略設計・企画、台本作成、撮影・動画編集、投稿代行、プロフィール改善、分析・改善提案まで。採用力の強化、認知拡大・ブランディング、集客・問い合わせの促進を支援します。</p></div>
+      <div class="svc-row"><span class="num">02</span><h3>Web制作</h3><p>ホームページ・LP制作、採用サイト／採用ページ制作。「Web制作を、もっと身近に」をコンセプトに、SNSとつながるWebを制作します。</p></div>
+      <div class="svc-row"><span class="num">03</span><h3>MEO対策</h3><p>Googleマップ（MEO）とAI検索（AIO）対策で「見つかる、選ばれる」お店・会社づくりを支援。SNS × MEO・AIO × Web制作を組み合わせた集客が可能です。</p></div>
+    </div>
+
+    <p class="sec-label" style="margin-top:48px">SNS運用・動画制作の内訳</p>
+    <div class="detail-grid">
+      <div class="detail"><b>01</b><h4>企画・台本作成</h4><p>誰に、何を届けるかから設計。フックのある冒頭と、最後まで見られる構成で台本を作ります。</p></div>
+      <div class="detail"><b>02</b><h4>撮影</h4><p>現場にお伺いして撮影。インタビューの引き出し方まで含めて、自然な表情を撮ります。</p></div>
+      <div class="detail"><b>03</b><h4>動画編集</h4><p>テロップ、音、テンポまでスマホで見やすい縦型編集。サムネイル（カバー）の方向性も含めて仕上げます。</p></div>
+      <div class="detail"><b>04</b><h4>投稿代行</h4><p>キャプション、ハッシュタグ、投稿時間まで含めた投稿代行。運用の手間を丸ごとお任せいただけます。</p></div>
+      <div class="detail"><b>05</b><h4>プロフィール改善</h4><p>動画を見た人が次に取る行動まで考えて、プロフィール文やハイライトを整えます。</p></div>
+      <div class="detail"><b>06</b><h4>分析・改善提案</h4><p>再生数や反応を見て、次の一本に活かす改善提案。数字だけで終わらせません。</p></div>
+    </div>
+    <p class="genre-line"><span>SNS運用</span><i>/</i><span>Web制作</span><i>/</i><span>MEO対策</span><i>/</i><span>採用動画</span><i>/</i><span>SNSリール</span><i>/</i><span>会社紹介</span></p>
+
+    <p class="sec-label" style="margin-top:56px">Flow — 制作の流れ</p>
+    <div class="flow-list">
+      <div class="flow-item"><b>STEP 01</b><h3>ヒアリング</h3><p>目的・ターゲット・伝えたいことを伺います</p></div>
+      <div class="flow-item"><b>STEP 02</b><h3>企画・台本</h3><p>構成と台本を作成し、事前に共有します</p></div>
+      <div class="flow-item"><b>STEP 03</b><h3>撮影</h3><p>現場で撮影。所要時間は事前に調整します</p></div>
+      <div class="flow-item"><b>STEP 04</b><h3>編集</h3><p>縦型リール向けに編集します</p></div>
+      <div class="flow-item"><b>STEP 05</b><h3>確認・修正</h3><p>ご確認いただき、修正に対応します</p></div>
+      <div class="flow-item"><b>STEP 06</b><h3>納品・投稿</h3><p>納品、または投稿代行まで対応します</p></div>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section>
+    <p class="sec-label">04 — Profile</p>
+    <div class="sec-head"><h2>プロフィール</h2></div>
+    <div class="profile-grid" style="margin-top:20px">
+      <p>長野県大町市を拠点とするフリーランス／個人事業です。まずは実績の動画をご覧いただき、作風が合うかご判断ください。</p>
+      <dl class="profile-table" style="margin:0">
+        <div><dt>名前</dt><dd>中村 ／ 北アルプスメディア</dd></div>
+        <div><dt>肩書き</dt><dd>SNS運用 ・ 動画制作（フリーランス）</dd></div>
+        <div><dt>拠点</dt><dd>長野県大町市</dd></div>
+        <div><dt>契約</dt><dd>法人 3社と契約中</dd></div>
+        <div><dt>対応領域</dt><dd>SNS運用 ／ Web制作 ／ MEO対策</dd></div>
+        <div><dt>編集ソフト</dt><dd>Premiere Pro ／ CapCut</dd></div>
+        <div><dt>稼働時間</dt><dd>平日3日〜 ／ 1日6時間〜（目安）</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a></dd></div>
+        <div><dt>ホームページ</dt><dd><a href="https://kitaalps-media.jp/" target="_blank" rel="noopener">kitaalps-media.jp</a></dd></div>
+        <div><dt>メール</dt><dd><a href="mailto:nakamurayoshiki3@gmail.com">nakamurayoshiki3@gmail.com</a></dd></div>
+        <div><dt>電話</dt><dd><a href="tel:08032110412">080-3211-0412</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact" id="contact">
+    <p class="sec-label">Contact</p>
+    <h2>SNS運用・動画制作のご相談は、お気軽にどうぞ</h2>
+    <p>「採用で困っている」「SNS・Web・MEOの何から始めればいいか分からない」という段階でも大丈夫です。実績動画へのご質問だけでも歓迎します。</p>
+    <div class="cta-row" style="margin-top:0">
+      <a class="btn btn-solid" href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram DMで相談する</a>
+      <a class="btn" href="mailto:nakamurayoshiki3@gmail.com?subject=SNS%E9%81%8B%E7%94%A8%E3%83%BB%E5%8B%95%E7%94%BB%E5%88%B6%E4%BD%9C%E3%81%AE%E7%9B%B8%E8%AB%87">メールで相談する</a>
+      <a class="btn" href="tel:08032110412">電話する（080-3211-0412）</a>
+      <a class="btn" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">ホームページを見る</a>
+    </div>
+    <p class="contact-meta">ホームページ：<a href="https://kitaalps-media.jp/" target="_blank" rel="noopener" style="color:inherit;font-weight:700">kitaalps-media.jp</a> ／ メール：<a href="mailto:nakamurayoshiki3@gmail.com" style="color:inherit;font-weight:700">nakamurayoshiki3@gmail.com</a> ／ 電話：<a href="tel:08032110412" style="color:inherit;font-weight:700">080-3211-0412</a> ／ Instagram：@yoshiki_sns.nagano</p>
+  </div>
+
+  <footer class="footer">
+    <span>© 北アルプスメディア — 長野県大町市</span>
+    <span><a href="https://kitaalps-media.jp/" target="_blank" rel="noopener">ホームページ</a> ・ <a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram</a> ・ <a href="mailto:nakamurayoshiki3@gmail.com">nakamurayoshiki3@gmail.com</a> ・ <a href="tel:08032110412">080-3211-0412</a></span>
+  </footer>
+</div>
+</body>
+</html>
