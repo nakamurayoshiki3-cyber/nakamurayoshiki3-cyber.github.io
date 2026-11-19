@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:,">
-<title>ポートフォリオ | 北アルプスメディア — SNS運用・動画制作</title>
+<title>ポートフォリオ | 北アルプスメディア — 動画編集・SNS運用（編集のみの依頼も歓迎）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -80,6 +80,32 @@ img{max-width:100%;display:block}
 .hp-btn .hp-label small{display:block;font-family:Inter,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.24em;opacity:.6;margin-bottom:3px}
 .hp-btn .hp-arrow{font-size:24px;line-height:1;flex:none}
 @media(max-width:640px){.hp-btn{padding:18px 20px}.hp-btn .hp-label{font-size:15.5px}}
+
+/* EDIT-FIRST HERO ADDITIONS */
+.edit-banner{background:var(--ink);color:var(--bg);padding:20px 22px;margin:0 0 28px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.edit-banner strong{font-size:clamp(20px,3.4vw,28px);line-height:1.35;font-weight:900;letter-spacing:-.01em;display:block}
+.edit-banner span{font-size:13.5px;line-height:1.75;opacity:.82;display:block;margin-top:4px;max-width:38em}
+.edit-banner em{font-style:normal;font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.18em;border:1px solid currentColor;padding:6px 9px;line-height:1;white-space:nowrap;margin-top:4px}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--line-dark);margin-top:28px}
+.quick div{padding:18px 18px 16px}
+.quick div + div{border-left:1px solid var(--line)}
+.quick b{font-size:16.5px;line-height:1.45;display:block;margin-bottom:6px}
+.quick b small{display:block;font-family:Inter,sans-serif;font-size:10px;letter-spacing:.18em;color:var(--ink-3);margin-bottom:6px}
+.quick span{font-size:13px;line-height:1.75;color:var(--ink-2);display:block}
+@media(max-width:700px){.quick{grid-template-columns:1fr}.quick div + div{border-left:none;border-top:1px solid var(--line)}}
+.pick-roles{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.role{font-size:11.5px;font-weight:800;letter-spacing:.04em;line-height:1;padding:7px 9px;border:1px solid currentColor}
+.role-solid{background:#fff;color:#0a0a0a;border-color:#fff}
+@media(prefers-color-scheme:dark){.role-solid{background:#0a0a0a;color:#fff;border-color:#0a0a0a}}
+.pick-edit{display:block;font-size:12.5px;line-height:1.7;color:#d8d8d8;margin:0 0 10px}
+@media(prefers-color-scheme:dark){.pick-edit{color:#444}}
+.pattern-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);margin-top:28px}
+.pattern{padding:20px}
+.pattern + .pattern{border-left:1px solid var(--line)}
+.pattern b{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-3);display:block;margin-bottom:8px}
+.pattern h4{font-size:17px;margin:0 0 6px;line-height:1.4}
+.pattern p{font-size:13.5px;color:var(--ink-2);line-height:1.8;margin:0}
+@media(max-width:760px){.pattern-grid{grid-template-columns:1fr}.pattern + .pattern{border-left:none;border-top:1px solid var(--line)}}
 
 /* SECTIONS */
 section{padding:72px 0;border-top:1px solid var(--line)}
@@ -213,30 +239,41 @@ section{padding:72px 0;border-top:1px solid var(--line)}
     <nav class="nav" aria-label="ページ内リンク">
       <a href="#intro">自己紹介</a>
       <a href="#works">実績</a>
-      <a href="#service">サービス</a>
+      <a href="#service">依頼できること</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <div class="hero">
-    <p class="hero-eyebrow">PORTFOLIO — NAGANO, OMACHI</p>
-    <p class="hero-sub"><b>SNS運用 ・ 動画制作</b> 中村 ／ 北アルプスメディア（長野県大町市）・フリーランス</p>
+    <p class="hero-eyebrow">VIDEO EDITING PORTFOLIO — NAGANO / REMOTE</p>
+    <div class="edit-banner">
+      <div><strong>動画編集のみの依頼も歓迎</strong><span>SNS運用まるごとの契約は不要です。撮影済みの素材をお預かりして、編集だけを担当することもできます。</span></div>
+      <em>EDIT ONLY OK</em>
+    </div>
+    <p class="hero-sub"><b>動画編集 ・ 動画制作</b> 中村 ／ 北アルプスメディア（長野県大町市）・フリーランス</p>
     <h1><span>人の魅力が、</span><span>伝わる動画を。</span></h1>
-    <p class="lead">長野県大町市を拠点にフリーランスで活動しています。<strong>SNS運用代行を軸に、動画制作・Web制作・MEO対策</strong>まで対応。現在は<strong>法人3社と契約中</strong>で、採用動画・SNSリール・会社紹介動画を継続制作しています。</p>
+    <p class="lead">長野県大町市を拠点に、<strong>動画編集・撮影・企画</strong>を担当しています。<strong>編集のみ／撮影＋編集／SNS運用まるごと</strong>、必要な範囲だけご依頼いただけます。現在は<strong>法人3社と契約中</strong>で、採用動画・SNSリール・会社紹介動画を継続制作しています。</p>
+
+    <div class="quick" aria-label="依頼できる範囲">
+      <div><b><small>01 — EDIT ONLY</small>編集のみ</b><span><strong>全国リモート対応。</strong>素材渡しでOK。Premiere Pro／CapCut、縦型リールのカット・テロップ・音／テンポ調整まで対応。</span></div>
+      <div><b><small>02 — SHOOT + EDIT</small>撮影＋編集</b><span><strong>長野県内は撮影対応。</strong>企画・台本から撮影、編集まで一貫して担当できます。</span></div>
+      <div><b><small>03 — FULL SUPPORT</small>SNS運用まるごと</b><span>必要な方のみ。投稿代行・プロフィール改善・分析まで。編集だけの依頼を、運用契約に縛りません。</span></div>
+    </div>
+
     <a class="hp-btn" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">
       <span class="hp-label"><small>OFFICIAL SITE — kitaalps-media.jp</small>北アルプスメディア 公式ホームページ</span>
       <span class="hp-arrow">→</span>
     </a>
-    <div class="hero-meta"><span>長野県大町市拠点</span><span>法人 3社契約中</span><span>SNS運用</span><span>Web制作</span><span>MEO対策</span></div>
+    <div class="hero-meta"><span>編集：全国リモート対応</span><span>撮影：長野県内対応</span><span>長野県大町市拠点</span><span>法人 3社契約中</span></div>
     <div class="cta-row">
-      <a class="btn btn-black" href="#works">実績を見る →</a>
-      <a class="btn btn-white" href="#contact">相談する</a>
+      <a class="btn btn-black" href="#works">実績と担当範囲を見る →</a>
+      <a class="btn btn-white" href="#contact">編集のみで相談する</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><b>法人 3社契約中</b><span>企業のSNS運用・動画制作を継続支援しています</span></div>
-      <div class="stat"><b>自社でも運用中</b><span>@yoshiki_sns.nagano で企画・運用</span></div>
-      <div class="stat"><b>いいね 5,200超</b><span>自社メディアの参加型リール／長野県民向けコンテンツ</span></div>
+      <div class="stat"><b>編集のみでもOK</b><span>素材をお預かりして編集だけ担当できます（全国リモート）</span></div>
+      <div class="stat"><b>法人 3社契約中</b><span>企業の動画制作・SNS運用を継続支援しています</span></div>
+      <div class="stat"><b>いいね 5,200超</b><span>自社メディア @yoshiki_sns.nagano の参加型リール実績</span></div>
     </div>
   </div>
 
@@ -246,12 +283,14 @@ section{padding:72px 0;border-top:1px solid var(--line)}
     <div class="sec-head"><h2>自己紹介</h2></div>
     <p class="intro-lead">現場の人の魅力を、そのまま届く形に。</p>
     <div class="intro-body">
-      <p>長野県大町市を拠点に、フリーランスでSNS運用代行を行っている<strong>北アルプスメディアの中村</strong>です。企業の採用動画・SNSリール・会社紹介動画を中心に、企画・台本作成から撮影・編集・投稿代行まで一貫して対応しています。</p>
+      <p>長野県大町市を拠点に、フリーランスで動画編集・動画制作を行っている<strong>北アルプスメディアの中村</strong>です。企業の採用動画・SNSリール・会社紹介動画を中心に、<strong>編集のみのご依頼から、企画・台本・撮影・編集・投稿代行まで</strong>、必要な範囲だけ対応しています。</p>
     </div>
     <ul class="intro-list">
+      <li><strong>動画編集のみの依頼も歓迎</strong> — SNS運用まるごとの契約は不要です</li>
+      <li><strong>対応エリア：編集は全国リモート対応／撮影は長野県内対応</strong></li>
       <li><strong>法人3社と契約中</strong></li>
       <li>自社Instagramアカウント運用中（<a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a>）</li>
-      <li><strong>対応領域：</strong>SNS運用／Web制作／MEO対策</li>
+      <li><strong>対応領域：</strong>動画編集／動画制作／SNS運用／Web制作／MEO対策</li>
       <li><strong>編集ソフト：</strong>Premiere Pro／CapCut</li>
       <li><strong>稼働時間：</strong>平日3日〜／1日6時間〜（目安）</li>
     </ul>
@@ -262,19 +301,21 @@ section{padding:72px 0;border-top:1px solid var(--line)}
     <p class="sec-label">02 — Works</p>
     <div class="sec-head">
       <h2>実績</h2>
-      <p>代表作3本をまとめています。各項目から、実際に公開されているInstagramの動画をご覧いただけます。</p>
+      <p>代表作3本です。各作品に<strong>担当業務（企画・撮影・編集のどこまで担当したか）</strong>を明記しています。タップすると、実際に公開されているInstagramの動画をご覧いただけます。</p>
     </div>
 
     <div class="pickup">
-      <p class="sec-label">Pick Up</p>
+      <p class="sec-label">Pick Up — Works &amp; Role</p>
       <h2>まず見てほしい、3本</h2>
-      <p class="pickup-lead">採用の現場の声、未経験から始めた先輩、そして街の人が参加する企画。作風の違いが分かる代表作です。</p>
+      <p class="pickup-lead">編集スキルと作風が分かる代表作です。全作品で編集を担当しています。企画・撮影まで担当した範囲も、あわせてご確認ください。</p>
       <div class="pick-list">
         <a class="pick-item" href="https://www.instagram.com/reel/Dd8qDg6MWi3/" target="_blank" rel="noopener">
           <span class="pick-no">01</span>
           <div>
             <h3>「長野で、長く働きたい人へ。」</h3>
             <p>日特工業株式会社の採用動画シリーズ代表作。長野で働くことの魅力を、現場の言葉で伝える1本です。</p>
+            <span class="pick-roles"><span class="role">担当：企画・台本</span><span class="role">担当：撮影</span><span class="role role-solid">担当：編集</span></span>
+            <span class="pick-edit">担当範囲：企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</span>
             <span class="pick-tags">採用動画 ／ 日特工業株式会社 ／ @nittoku_kogyo_omachi</span>
           </div>
           <span class="pick-arrow">→</span>
@@ -284,6 +325,8 @@ section{padding:72px 0;border-top:1px solid var(--line)}
           <div>
             <h3>「この機械、実は300万円。使っている先輩も、最初は未経験でした。」</h3>
             <p>増田登記測量事務所（マッソク）の採用動画。測量機器と、未経験スタートの先輩を紹介します。</p>
+            <span class="pick-roles"><span class="role">担当：企画・台本</span><span class="role">担当：撮影</span><span class="role role-solid">担当：編集</span></span>
+            <span class="pick-edit">担当範囲：企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</span>
             <span class="pick-tags">採用動画 ／ 増田測量 ／ @massoku</span>
           </div>
           <span class="pick-arrow">→</span>
@@ -293,6 +336,8 @@ section{padding:72px 0;border-top:1px solid var(--line)}
           <div>
             <h3>「『自由に撮ってOKな写るんです』を穂高駅に置いてみた」</h3>
             <p>駅にカメラを置く参加型の実験企画リール。通りかかった人の一瞬が集まる、自社メディアならではの企画です。</p>
+            <span class="pick-roles"><span class="role">担当：企画</span><span class="role">担当：撮影（設置）</span><span class="role role-solid">担当：編集</span></span>
+            <span class="pick-edit">担当範囲：企画 ／ 撮影（カメラ設置） ／ 編集 — 自社企画のため全工程を担当</span>
             <span class="pick-tags">参加型企画 ／ いいね 4,000超 ・ コメント 97件 ／ @yoshiki_sns.nagano</span>
           </div>
           <span class="pick-arrow">→</span>
@@ -305,16 +350,22 @@ section{padding:72px 0;border-top:1px solid var(--line)}
   <section id="service">
     <p class="sec-label">03 — Service</p>
     <div class="sec-head">
-      <h2>できること</h2>
-      <p>SNS運用 ／ Web制作 ／ MEO対策。対応領域は3つです。単発の動画1本から、毎月の継続運用まで。必要な領域だけのご依頼も可能です。</p>
+      <h2>依頼できること</h2>
+      <p>まずは<strong>動画編集だけ</strong>でも大丈夫です。単発の動画1本から、毎月の継続制作・運用まで。必要な範囲だけご依頼ください。</p>
+    </div>
+    <div class="pattern-grid" aria-label="依頼パターン">
+      <div class="pattern"><b>PATTERN A</b><h4>編集のみ</h4><p>全国リモート対応。撮影済み素材をお預かりし、カット・テロップ・音／テンポ調整まで編集します。</p></div>
+      <div class="pattern"><b>PATTERN B</b><h4>撮影＋編集</h4><p>長野県内は撮影対応。企画・台本から撮影、編集まで一貫して担当します。</p></div>
+      <div class="pattern"><b>PATTERN C</b><h4>SNS運用まるごと</h4><p>必要な方のみ。投稿代行・プロフィール改善・分析・改善提案まで対応します。</p></div>
     </div>
     <div class="svc-list">
-      <div class="svc-row"><span class="num">01</span><h3>SNS運用</h3><p>戦略設計・企画、台本作成、撮影・動画編集、投稿代行、プロフィール改善、分析・改善提案まで。採用力の強化、認知拡大・ブランディング、集客・問い合わせの促進を支援します。</p></div>
-      <div class="svc-row"><span class="num">02</span><h3>Web制作</h3><p>ホームページ・LP制作、採用サイト／採用ページ制作。「Web制作を、もっと身近に」をコンセプトに、SNSとつながるWebを制作します。</p></div>
-      <div class="svc-row"><span class="num">03</span><h3>MEO対策</h3><p>Googleマップ（MEO）とAI検索（AIO）対策で「見つかる、選ばれる」お店・会社づくりを支援。SNS × MEO・AIO × Web制作を組み合わせた集客が可能です。</p></div>
+      <div class="svc-row"><span class="num">01</span><h3>動画編集</h3><p><strong>単体依頼OK／全国リモート対応。</strong>縦型リール・採用動画・会社紹介動画の編集。テロップ、音、テンポまでスマホで見やすい形に仕上げます。Premiere Pro／CapCut対応。</p></div>
+      <div class="svc-row"><span class="num">02</span><h3>SNS運用</h3><p>戦略設計・企画、台本作成、撮影・動画編集、投稿代行、プロフィール改善、分析・改善提案まで。採用力の強化、認知拡大・ブランディング、集客・問い合わせの促進を支援します。</p></div>
+      <div class="svc-row"><span class="num">03</span><h3>Web制作</h3><p>ホームページ・LP制作、採用サイト／採用ページ制作。「Web制作を、もっと身近に」をコンセプトに、SNSとつながるWebを制作します。</p></div>
+      <div class="svc-row"><span class="num">04</span><h3>MEO対策</h3><p>Googleマップ（MEO）とAI検索（AIO）対策で「見つかる、選ばれる」お店・会社づくりを支援。SNS × MEO・AIO × Web制作を組み合わせた集客が可能です。</p></div>
     </div>
 
-    <p class="sec-label" style="margin-top:48px">SNS運用・動画制作の内訳</p>
+    <p class="sec-label" style="margin-top:48px">動画編集・動画制作の内訳</p>
     <div class="detail-grid">
       <div class="detail"><b>01</b><h4>企画・台本作成</h4><p>誰に、何を届けるかから設計。フックのある冒頭と、最後まで見られる構成で台本を作ります。</p></div>
       <div class="detail"><b>02</b><h4>撮影</h4><p>現場にお伺いして撮影。インタビューの引き出し方まで含めて、自然な表情を撮ります。</p></div>
@@ -323,7 +374,7 @@ section{padding:72px 0;border-top:1px solid var(--line)}
       <div class="detail"><b>05</b><h4>プロフィール改善</h4><p>動画を見た人が次に取る行動まで考えて、プロフィール文やハイライトを整えます。</p></div>
       <div class="detail"><b>06</b><h4>分析・改善提案</h4><p>再生数や反応を見て、次の一本に活かす改善提案。数字だけで終わらせません。</p></div>
     </div>
-    <p class="genre-line"><span>SNS運用</span><i>/</i><span>Web制作</span><i>/</i><span>MEO対策</span><i>/</i><span>採用動画</span><i>/</i><span>SNSリール</span><i>/</i><span>会社紹介</span></p>
+    <p class="genre-line"><span>動画編集のみ</span><i>/</i><span>撮影＋編集</span><i>/</i><span>SNS運用</span><i>/</i><span>Web制作</span><i>/</i><span>MEO対策</span><i>/</i><span>採用動画</span><i>/</i><span>SNSリール</span><i>/</i><span>会社紹介</span></p>
 
     <p class="sec-label" style="margin-top:56px">Flow — 制作の流れ</p>
     <div class="flow-list">
@@ -341,13 +392,15 @@ section{padding:72px 0;border-top:1px solid var(--line)}
     <p class="sec-label">04 — Profile</p>
     <div class="sec-head"><h2>プロフィール</h2></div>
     <div class="profile-grid" style="margin-top:20px">
-      <p>長野県大町市を拠点とするフリーランス／個人事業です。まずは実績の動画をご覧いただき、作風が合うかご判断ください。</p>
+      <p>長野県大町市を拠点とするフリーランス／個人事業です。まずは実績の動画と担当範囲をご覧いただき、作風と依頼できる範囲が合うかご判断ください。</p>
       <dl class="profile-table" style="margin:0">
         <div><dt>名前</dt><dd>中村 ／ 北アルプスメディア</dd></div>
-        <div><dt>肩書き</dt><dd>SNS運用 ・ 動画制作（フリーランス）</dd></div>
+        <div><dt>肩書き</dt><dd>動画編集 ・ 動画制作（フリーランス）</dd></div>
         <div><dt>拠点</dt><dd>長野県大町市</dd></div>
+        <div><dt>依頼形態</dt><dd>編集のみ ／ 撮影＋編集 ／ SNS運用まるごと</dd></div>
+        <div><dt>対応エリア</dt><dd>編集：全国リモート ／ 撮影：長野県内</dd></div>
         <div><dt>契約</dt><dd>法人 3社と契約中</dd></div>
-        <div><dt>対応領域</dt><dd>SNS運用 ／ Web制作 ／ MEO対策</dd></div>
+        <div><dt>対応領域</dt><dd>動画編集 ／ SNS運用 ／ Web制作 ／ MEO対策</dd></div>
         <div><dt>編集ソフト</dt><dd>Premiere Pro ／ CapCut</dd></div>
         <div><dt>稼働時間</dt><dd>平日3日〜 ／ 1日6時間〜（目安）</dd></div>
         <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a></dd></div>
@@ -361,8 +414,8 @@ section{padding:72px 0;border-top:1px solid var(--line)}
   <!-- CONTACT -->
   <div class="contact" id="contact">
     <p class="sec-label">Contact</p>
-    <h2>SNS運用・動画制作のご相談は、お気軽にどうぞ</h2>
-    <p>「採用で困っている」「SNS・Web・MEOの何から始めればいいか分からない」という段階でも大丈夫です。実績動画へのご質問だけでも歓迎します。</p>
+    <h2>動画編集のみのご相談も、歓迎します</h2>
+    <p>「撮影済みの素材があるので、編集だけ頼みたい」「まず1本だけ試したい」というご相談で大丈夫です。編集は全国リモート対応、撮影が必要な場合は長野県内まで対応します。SNS運用・Web・MEOのご相談も可能です。</p>
     <div class="cta-row" style="margin-top:0">
       <a class="btn btn-solid" href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram DMで相談する</a>
       <a class="btn" href="mailto:nakamurayoshiki3@gmail.com?subject=SNS%E9%81%8B%E7%94%A8%E3%83%BB%E5%8B%95%E7%94%BB%E5%88%B6%E4%BD%9C%E3%81%AE%E7%9B%B8%E8%AB%87">メールで相談する</a>
