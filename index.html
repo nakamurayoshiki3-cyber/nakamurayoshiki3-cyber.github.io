@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:,">
-<title>ポートフォリオ | 北アルプスメディア — 動画編集・SNS運用（編集のみの依頼も歓迎）</title>
+<title>動画編集者ポートフォリオ | 中村 — Premiere Pro・ショート動画編集／リモート勤務希望</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -18,8 +18,6 @@
   --ink-3:#8a8a8a;
   --line:#e6e6e6;
   --line-dark:#0a0a0a;
-  --black:#0a0a0a;
-  --white:#ffffff;
 }
 @media (prefers-color-scheme: dark){
   :root{
@@ -30,8 +28,6 @@
     --ink-3:#8f8f8f;
     --line:#262626;
     --line-dark:#ffffff;
-    --black:#ffffff;
-    --white:#0a0a0a;
   }
 }
 *{box-sizing:border-box}
@@ -49,17 +45,29 @@ img{max-width:100%;display:block}
 .nav{display:flex;gap:28px;flex-wrap:wrap}
 .nav a{font-size:13px;font-weight:700;letter-spacing:.08em;text-decoration:none;color:var(--ink-2)}
 .nav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+.nav a.nav-home{background:var(--ink);color:var(--bg);padding:8px 14px;margin:-8px 0}
+.nav a.nav-home:hover{opacity:.82;text-decoration:none;color:var(--bg)}
 @media(max-width:640px){.nav{gap:16px}.nav a{font-size:12px}}
 
+/* HOMEPAGE PROMO — top, prominent */
+.home-promo{display:flex;align-items:center;justify-content:space-between;gap:24px;background:var(--ink);color:var(--bg);text-decoration:none;padding:26px 28px;margin-top:28px;border:2px solid var(--line-dark)}
+.home-promo:hover{opacity:.9}
+.home-promo-label{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.24em;opacity:.72;display:block;margin-bottom:8px}
+.home-promo strong{font-size:clamp(22px,3.6vw,32px);line-height:1.3;font-weight:900;letter-spacing:-.02em;display:block}
+.home-promo-sub{font-size:14px;line-height:1.75;opacity:.85;display:block;margin-top:6px}
+.home-promo-url{font-family:Inter,sans-serif;font-size:13px;font-weight:700;letter-spacing:.06em;text-decoration:underline;text-underline-offset:4px;display:inline-block;margin-top:8px}
+.home-promo-arrow{flex:none;width:56px;height:56px;border:2px solid currentColor;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
+@media(max-width:640px){.home-promo{padding:22px 20px;margin-top:20px}.home-promo-arrow{width:46px;height:46px;font-size:22px}}
+
 /* HERO */
-.hero{padding:72px 0 64px}
-@media(max-width:640px){.hero{padding:48px 0 44px}}
+.hero{padding:40px 0 64px}
+@media(max-width:640px){.hero{padding:32px 0 44px}}
 .hero-eyebrow{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.28em;color:var(--ink-3);margin:0 0 28px}
-.hero h1{font-size:clamp(44px,8vw,84px);line-height:1.02;letter-spacing:-.03em;font-weight:900;margin:0 0 28px}
+.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.12;letter-spacing:-.03em;font-weight:900;margin:0 0 28px}
 .hero h1 span{display:block}
 .hero-sub{font-size:15px;font-weight:700;letter-spacing:.06em;margin:0 0 18px}
 .hero-sub b{background:var(--ink);color:var(--bg);padding:3px 10px;margin-right:10px;font-size:13px;letter-spacing:.08em}
-.lead{font-size:17.5px;line-height:2;color:var(--ink-2);max-width:36em;margin:0}
+.lead{font-size:17.5px;line-height:2;color:var(--ink-2);max-width:38em;margin:0}
 .lead strong{color:var(--ink)}
 .hero-meta{margin:36px 0 0;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--ink-2)}
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--line-dark);border-bottom:1px solid var(--line);margin-top:48px}
@@ -74,14 +82,8 @@ img{max-width:100%;display:block}
 .btn-black:hover{opacity:.82}
 .btn-white{background:transparent;color:var(--ink)}
 .btn-white:hover{background:var(--bg-soft)}
-.hp-btn{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--ink);color:var(--bg);text-decoration:none;padding:20px 26px;margin-top:34px;border:1.5px solid var(--ink)}
-.hp-btn:hover{opacity:.85}
-.hp-btn .hp-label{font-weight:900;font-size:17px;letter-spacing:.04em;line-height:1.4}
-.hp-btn .hp-label small{display:block;font-family:Inter,sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.24em;opacity:.6;margin-bottom:3px}
-.hp-btn .hp-arrow{font-size:24px;line-height:1;flex:none}
-@media(max-width:640px){.hp-btn{padding:18px 20px}.hp-btn .hp-label{font-size:15.5px}}
 
-/* EDIT-FIRST HERO ADDITIONS */
+/* SEEKING BANNER + QUICK FACTS */
 .edit-banner{background:var(--ink);color:var(--bg);padding:20px 22px;margin:0 0 28px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
 .edit-banner strong{font-size:clamp(20px,3.4vw,28px);line-height:1.35;font-weight:900;letter-spacing:-.01em;display:block}
 .edit-banner span{font-size:13.5px;line-height:1.75;opacity:.82;display:block;margin-top:4px;max-width:38em}
@@ -93,19 +95,6 @@ img{max-width:100%;display:block}
 .quick b small{display:block;font-family:Inter,sans-serif;font-size:10px;letter-spacing:.18em;color:var(--ink-3);margin-bottom:6px}
 .quick span{font-size:13px;line-height:1.75;color:var(--ink-2);display:block}
 @media(max-width:700px){.quick{grid-template-columns:1fr}.quick div + div{border-left:none;border-top:1px solid var(--line)}}
-.pick-roles{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
-.role{font-size:11.5px;font-weight:800;letter-spacing:.04em;line-height:1;padding:7px 9px;border:1px solid currentColor}
-.role-solid{background:#fff;color:#0a0a0a;border-color:#fff}
-@media(prefers-color-scheme:dark){.role-solid{background:#0a0a0a;color:#fff;border-color:#0a0a0a}}
-.pick-edit{display:block;font-size:12.5px;line-height:1.7;color:#d8d8d8;margin:0 0 10px}
-@media(prefers-color-scheme:dark){.pick-edit{color:#444}}
-.pattern-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);margin-top:28px}
-.pattern{padding:20px}
-.pattern + .pattern{border-left:1px solid var(--line)}
-.pattern b{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-3);display:block;margin-bottom:8px}
-.pattern h4{font-size:17px;margin:0 0 6px;line-height:1.4}
-.pattern p{font-size:13.5px;color:var(--ink-2);line-height:1.8;margin:0}
-@media(max-width:760px){.pattern-grid{grid-template-columns:1fr}.pattern + .pattern{border-left:none;border-top:1px solid var(--line)}}
 
 /* SECTIONS */
 section{padding:72px 0;border-top:1px solid var(--line)}
@@ -114,26 +103,20 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .sec-head h2{font-size:clamp(30px,5vw,44px);line-height:1.15;letter-spacing:-.02em;font-weight:900;margin:0 0 14px}
 .sec-head p{color:var(--ink-2);margin:0;max-width:40em;font-size:16px;line-height:1.9}
 
-/* INTRO */
-.intro-lead{font-size:clamp(22px,3.2vw,30px);line-height:1.5;font-weight:900;letter-spacing:-.01em;margin:28px 0 24px;max-width:18em}
-.intro-body{max-width:42em}
-.intro-body p{color:var(--ink-2);margin:0 0 18px;line-height:2}
-.intro-body p strong{color:var(--ink)}
-.intro-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);margin-top:36px}
-.intro-fact{padding:22px}
-.intro-fact + .intro-fact{border-left:1px solid var(--line)}
-.intro-fact b{display:block;font-size:16px;line-height:1.4;margin-bottom:8px}
-.intro-fact span{font-size:13.5px;color:var(--ink-2);line-height:1.75;display:block}
-@media(max-width:760px){.intro-facts{grid-template-columns:1fr}.intro-fact + .intro-fact{border-left:none;border-top:1px solid var(--line)}}
-.text-links{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:28px}
-.text-links a{font-size:14px;font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
-.text-links a:hover{opacity:.6}
-.intro-list{list-style:none;margin:32px 0 0;padding:0;border-top:2px solid var(--line-dark);max-width:42em}
-.intro-list li{position:relative;padding:16px 0 16px 26px;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.8;color:var(--ink-2)}
-.intro-list li::before{content:"—";position:absolute;left:0;top:16px;color:var(--ink);font-weight:800}
-.intro-list li strong{color:var(--ink);font-weight:800}
-.intro-list li a{font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:1px;color:var(--ink)}
-.intro-list li a:hover{opacity:.6}
+/* SKILLS */
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:32px;border-top:2px solid var(--line-dark)}
+@media(max-width:700px){.skill-grid{grid-template-columns:1fr}}
+.skill{padding:22px 0;border-bottom:1px solid var(--line)}
+.skill-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.skill h3{font-size:18px;margin:0;font-weight:900;line-height:1.4}
+.skill .tool{font-family:Inter,sans-serif;font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--ink-3);white-space:nowrap}
+.skill p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.85}
+.skill p strong{color:var(--ink)}
+.genre-line{margin-top:28px;font-size:14px;font-weight:800;letter-spacing:.04em;line-height:2;color:var(--ink-2)}
+.genre-line span{color:var(--ink)}
+.genre-line i{font-style:normal;color:var(--ink-3);margin:0 8px}
+.honest-note{margin-top:24px;padding:18px 20px;background:var(--bg-soft);font-size:14px;line-height:1.85;color:var(--ink-2)}
+.honest-note strong{color:var(--ink)}
 
 /* PICKUP - black block */
 .pickup{background:#0a0a0a;color:#fff;margin:40px -24px 0;padding:40px 36px 8px}
@@ -146,54 +129,56 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 @media(prefers-color-scheme:dark){.pickup-lead{color:#444}}
 .pick-list{margin-top:32px;border-top:1px solid #2a2a2a}
 @media(prefers-color-scheme:dark){.pick-list{border-top-color:#e0e0e0}}
-.pick-item{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:start;padding:26px 0;border-bottom:1px solid #2a2a2a;text-decoration:none;color:inherit}
+.pick-item{display:grid;grid-template-columns:64px 1fr auto;gap:20px;align-items:start;padding:26px 0;border-bottom:1px solid #2a2a2a}
 @media(prefers-color-scheme:dark){.pick-item{border-bottom-color:#e0e0e0}}
-.pick-item:hover h3{text-decoration:underline;text-underline-offset:5px}
 .pick-no{font-family:Inter,sans-serif;font-size:28px;font-weight:800;line-height:1;color:#fff}
 @media(prefers-color-scheme:dark){.pick-no{color:#0a0a0a}}
 .pick-item h3{font-size:19px;line-height:1.55;margin:0 0 8px;font-weight:800}
-.pick-item p{font-size:14px;line-height:1.8;color:#bdbdbd;margin:0 0 10px;max-width:36em}
-@media(prefers-color-scheme:dark){.pick-item p{color:#555}}
+.pick-item h3 a{color:inherit;text-decoration:none}
+.pick-item h3 a:hover{text-decoration:underline;text-underline-offset:5px}
+.pick-desc{font-size:14px;line-height:1.8;color:#bdbdbd;margin:0 0 14px;max-width:38em}
+@media(prefers-color-scheme:dark){.pick-desc{color:#555}}
+.pick-roles{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.role{font-size:11.5px;font-weight:800;letter-spacing:.04em;line-height:1;padding:7px 9px;border:1px solid currentColor}
+.role-solid{background:#fff;color:#0a0a0a;border-color:#fff}
+@media(prefers-color-scheme:dark){.role-solid{background:#0a0a0a;color:#fff;border-color:#0a0a0a}}
+.pick-detail{margin:0 0 12px;border-top:1px solid #2a2a2a}
+@media(prefers-color-scheme:dark){.pick-detail{border-top-color:#e0e0e0}}
+.pick-detail div{display:grid;grid-template-columns:118px 1fr;gap:12px;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:13.5px;line-height:1.8}
+@media(prefers-color-scheme:dark){.pick-detail div{border-bottom-color:#e0e0e0}}
+.pick-detail dt{font-weight:800;color:#9a9a9a;font-size:12px;letter-spacing:.06em;padding-top:2px}
+@media(prefers-color-scheme:dark){.pick-detail dt{color:#6b6b6b}}
+.pick-detail dd{margin:0;color:#e2e2e2}
+@media(prefers-color-scheme:dark){.pick-detail dd{color:#333}}
+@media(max-width:560px){.pick-detail div{grid-template-columns:1fr;gap:2px}}
 .pick-tags{font-size:12px;font-weight:700;letter-spacing:.04em;color:#8f8f8f}
+.pick-watch{display:inline-block;margin-top:10px;font-size:13px;font-weight:800;color:#fff;text-decoration:none;border-bottom:1.5px solid #fff;padding-bottom:2px}
+@media(prefers-color-scheme:dark){.pick-watch{color:#0a0a0a;border-bottom-color:#0a0a0a}}
 .pick-arrow{font-size:22px;line-height:1;padding-top:4px}
 @media(max-width:640px){.pick-item{grid-template-columns:44px 1fr}.pick-arrow{display:none}.pick-no{font-size:22px}}
 
-/* WORKS */
-.works-title{font-size:13px;font-weight:800;letter-spacing:.18em;margin:56px 0 0;padding-bottom:14px;border-bottom:2px solid var(--line-dark)}
-.work{padding:36px 0 8px;border-bottom:1px solid var(--line)}
-.work:last-child{border-bottom:none}
-.work-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;flex-wrap:wrap}
-.work-head h3{font-size:22px;line-height:1.35;margin:0 0 10px;font-weight:900;letter-spacing:-.01em}
-.work-head p{color:var(--ink-2);font-size:15px;line-height:1.9;margin:0;max-width:40em}
-.tag{font-size:11px;font-weight:800;letter-spacing:.1em;border:1px solid var(--ink);padding:6px 10px;white-space:nowrap;line-height:1}
-.ig-link{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:800;text-decoration:none;border-bottom:1.5px solid var(--ink);padding-bottom:2px}
-.note-box{margin:22px 0 6px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.note-box strong{font-size:15px;display:block;margin-bottom:6px}
-.note-box p{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.85}
-.reel-list{margin-top:20px;border-top:1px solid var(--line)}
-.reel{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
-.reel:hover h4{text-decoration:underline;text-underline-offset:4px}
-.reel h4{font-size:16px;line-height:1.6;margin:0;font-weight:700}
-.reel small{display:block;font-size:12.5px;color:var(--ink-3);font-weight:600;margin-top:3px;letter-spacing:.02em}
-.reel-arrow{font-size:20px;flex:none;color:var(--ink-3)}
-.small-note{font-size:13px;color:var(--ink-3);margin:16px 0 0}
+/* EXPERIENCE */
+.exp-list{border-top:2px solid var(--line-dark);margin-top:32px}
+.exp-row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+.exp-row h3{font-size:17px;margin:0;font-weight:900;line-height:1.5}
+.exp-row h3 small{display:block;font-size:12px;font-weight:700;color:var(--ink-3);letter-spacing:.04em;margin-top:4px}
+.exp-row p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.9}
+.exp-row p strong{color:var(--ink)}
+@media(max-width:700px){.exp-row{grid-template-columns:1fr;gap:6px}}
 
-/* SERVICE */
-.svc-list{border-top:2px solid var(--line-dark);margin-top:32px}
-.svc-row{display:grid;grid-template-columns:80px 180px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);align-items:start}
-.svc-row .num{font-family:Inter,sans-serif;font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--ink-3);padding-top:4px}
-.svc-row h3{font-size:20px;margin:0;font-weight:900}
-.svc-row p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.9}
-@media(max-width:700px){.svc-row{grid-template-columns:52px 1fr}.svc-row p{grid-column:2}}
-.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:8px}
-@media(max-width:700px){.detail-grid{grid-template-columns:1fr}}
-.detail{padding:20px 0;border-bottom:1px solid var(--line)}
-.detail b{font-family:Inter,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--ink-3);display:block;margin-bottom:6px}
-.detail h4{font-size:16px;margin:0 0 6px}
-.detail p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.8}
-.genre-line{margin-top:28px;font-size:14px;font-weight:800;letter-spacing:.04em;line-height:2;color:var(--ink-2)}
-.genre-line span{color:var(--ink)}
-.genre-line i{font-style:normal;color:var(--ink-3);margin:0 8px}
+/* WORK STYLE */
+.ws-table{border-top:2px solid var(--line-dark);margin-top:32px}
+.ws-table div{display:flex;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;align-items:baseline}
+.ws-table dt{font-weight:800;min-width:120px;color:var(--ink-3);font-size:13px;letter-spacing:.04em;flex:none}
+.ws-table dd{margin:0;font-weight:600;line-height:1.8}
+.ws-table dd small{display:block;font-weight:500;color:var(--ink-2);font-size:13.5px}
+@media(max-width:560px){.ws-table div{flex-direction:column;gap:2px}}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);margin-top:36px}
+.trust{padding:22px}
+.trust + .trust{border-left:1px solid var(--line)}
+.trust b{display:block;font-size:16px;line-height:1.4;margin-bottom:8px}
+.trust span{font-size:13.5px;color:var(--ink-2);line-height:1.75;display:block}
+@media(max-width:760px){.trust-grid{grid-template-columns:1fr}.trust + .trust{border-left:none;border-top:1px solid var(--line)}}
 
 /* FLOW */
 .flow-list{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px;margin-top:32px}
@@ -210,9 +195,10 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .profile-grid p{color:var(--ink-2);margin:0;line-height:2;font-size:16px}
 .profile-table{border-top:2px solid var(--line-dark)}
 .profile-table div{display:flex;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.profile-table dt{font-weight:800;min-width:88px;color:var(--ink-3);font-size:13px;letter-spacing:.04em;padding-top:2px;flex:none}
+.profile-table dt{font-weight:800;min-width:96px;color:var(--ink-3);font-size:13px;letter-spacing:.04em;padding-top:2px;flex:none}
 .profile-table dd{margin:0;font-weight:600}
 .profile-table a{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.sub-note{margin-top:28px;font-size:13.5px;color:var(--ink-3);line-height:1.85;max-width:44em}
 
 /* CONTACT */
 .contact{background:#0a0a0a;color:#fff;padding:56px 36px;margin:16px -24px 0;text-align:left}
@@ -235,199 +221,262 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 <div class="wrap">
 
   <header class="topbar">
-    <div class="brand"><small>KITA ALPS MEDIA</small>北アルプスメディア</div>
+    <div class="brand"><small>VIDEO EDITOR — NAKAMURA</small>中村 ／ 北アルプスメディア</div>
     <nav class="nav" aria-label="ページ内リンク">
-      <a href="#intro">自己紹介</a>
+      <a href="#skills">スキル</a>
       <a href="#works">実績</a>
-      <a href="#service">依頼できること</a>
-      <a href="#contact">お問い合わせ</a>
+      <a href="#workstyle">希望する働き方</a>
+      <a href="#profile">プロフィール</a>
+      <a href="#contact">連絡先</a>
+      <a class="nav-home" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">公式サイト ↗</a>
     </nav>
   </header>
 
+  <!-- HOMEPAGE — prominent, at the very top -->
+  <a class="home-promo" href="https://kitaalps-media.jp/" target="_blank" rel="noopener" aria-label="北アルプスメディア公式ホームページを開く">
+    <div>
+      <span class="home-promo-label">OFFICIAL WEBSITE — KITA ALPS MEDIA</span>
+      <strong>北アルプスメディア<br>公式ホームページはこちら →</strong>
+      <span class="home-promo-sub">SNS運用・WEB制作・MEO対策など、事業全体のサービス内容は公式サイトでご覧いただけます。</span>
+      <span class="home-promo-url">kitaalps-media.jp</span>
+    </div>
+    <span class="home-promo-arrow" aria-hidden="true">↗</span>
+  </a>
+
   <!-- HERO -->
   <div class="hero">
-    <p class="hero-eyebrow">VIDEO EDITING PORTFOLIO — NAGANO / REMOTE</p>
+    <p class="hero-eyebrow">VIDEO EDITOR PORTFOLIO — REMOTE / NAGANO</p>
     <div class="edit-banner">
-      <div><strong>動画編集のみの依頼も歓迎</strong><span>SNS運用まるごとの契約は不要です。撮影済みの素材をお預かりして、編集だけを担当することもできます。</span></div>
-      <em>EDIT ONLY OK</em>
+      <div><strong>動画編集・SNS運用のお仕事を募集中</strong><span>リモート勤務・アルバイト・業務委託に対応しています。編集のみのご相談も歓迎します。まずはスキルと実績をご覧ください。</span></div>
+      <em>NOW SEEKING WORK</em>
     </div>
-    <p class="hero-sub"><b>動画編集 ・ 動画制作</b> 中村 ／ 北アルプスメディア（長野県大町市）・フリーランス</p>
-    <h1><span>人の魅力が、</span><span>伝わる動画を。</span></h1>
-    <p class="lead">長野県大町市を拠点に、<strong>動画編集・撮影・企画</strong>を担当しています。<strong>編集のみ／撮影＋編集／SNS運用まるごと</strong>、必要な範囲だけご依頼いただけます。現在は<strong>法人3社と契約中</strong>で、採用動画・SNSリール・会社紹介動画を継続制作しています。</p>
+    <p class="hero-sub"><b>動画編集者</b> 中村 ／ 長野県大町市拠点・フリーランス</p>
+    <h1><span>動画編集・SNS運用で、</span><span>チームの力になりたい。</span></h1>
+    <p class="lead">長野県を拠点に、<strong>企業向けショート動画・採用動画・SNSコンテンツ</strong>の制作を行っています。<strong>Premiere Pro・CapCut</strong>を使用し、<strong>カット編集からテロップ・BGM・SEまで</strong>対応。<strong>法人3社の制作・運用経験</strong>を活かし、リモートでの継続的なお仕事を希望しています。</p>
 
-    <div class="quick" aria-label="依頼できる範囲">
-      <div><b><small>01 — EDIT ONLY</small>編集のみ</b><span><strong>全国リモート対応。</strong>素材渡しでOK。Premiere Pro／CapCut、縦型リールのカット・テロップ・音／テンポ調整まで対応。</span></div>
-      <div><b><small>02 — SHOOT + EDIT</small>撮影＋編集</b><span><strong>長野県内は撮影対応。</strong>企画・台本から撮影、編集まで一貫して担当できます。</span></div>
-      <div><b><small>03 — FULL SUPPORT</small>SNS運用まるごと</b><span>必要な方のみ。投稿代行・プロフィール改善・分析まで。編集だけの依頼を、運用契約に縛りません。</span></div>
+    <div class="quick" aria-label="要点">
+      <div><b><small>TOOLS</small>Premiere Pro ／ CapCut</b><span>カット編集・字幕／テロップ・BGM／SEまで、ショート動画の編集一式に対応します。</span></div>
+      <div><b><small>REMOTE</small>フルリモート希望</b><span>編集業務は全国リモート対応。長野県内であれば撮影にも対応できます。</span></div>
+      <div><b><small>AVAILABILITY</small>週3日程度・月80〜90時間</b><span>継続的なお仕事を希望しています。業務委託・アルバイトなど形態はご相談ください。</span></div>
     </div>
 
-    <a class="hp-btn" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">
-      <span class="hp-label"><small>OFFICIAL SITE — kitaalps-media.jp</small>北アルプスメディア 公式ホームページ</span>
-      <span class="hp-arrow">→</span>
-    </a>
-    <div class="hero-meta"><span>編集：全国リモート対応</span><span>撮影：長野県内対応</span><span>長野県大町市拠点</span><span>法人 3社契約中</span></div>
+    <div class="hero-meta"><span>フルリモート希望</span><span>週3日程度</span><span>月80〜90時間 目安</span><span>継続勤務希望</span><span>長野県内 撮影対応可</span></div>
     <div class="cta-row">
-      <a class="btn btn-black" href="#works">実績と担当範囲を見る →</a>
-      <a class="btn btn-white" href="#contact">編集のみで相談する</a>
+      <a class="btn btn-black" href="#skills">スキルと実績を見る →</a>
+      <a class="btn btn-white" href="#workstyle">希望する働き方を見る</a>
+      <a class="btn btn-white" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">公式ホームページを見る ↗</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><b>編集のみでもOK</b><span>素材をお預かりして編集だけ担当できます（全国リモート）</span></div>
-      <div class="stat"><b>法人 3社契約中</b><span>企業の動画制作・SNS運用を継続支援しています</span></div>
-      <div class="stat"><b>いいね 5,200超</b><span>自社メディア @yoshiki_sns.nagano の参加型リール実績</span></div>
+      <div class="stat"><b>Premiere Pro ／ CapCut</b><span>ショート動画編集が主軸。テロップ・BGM・SEまで対応</span></div>
+      <div class="stat"><b>法人 3社の制作経験</b><span>採用動画・SNSコンテンツの企画から投稿まで担当</span></div>
+      <div class="stat"><b>週3日・月80〜90時間</b><span>リモートで継続的に稼働できる体制です</span></div>
     </div>
   </div>
 
-  <!-- INTRODUCTION -->
-  <section id="intro">
-    <p class="sec-label">01 — Introduction</p>
-    <div class="sec-head"><h2>自己紹介</h2></div>
-    <p class="intro-lead">現場の人の魅力を、そのまま届く形に。</p>
-    <div class="intro-body">
-      <p>長野県大町市を拠点に、フリーランスで動画編集・動画制作を行っている<strong>北アルプスメディアの中村</strong>です。企業の採用動画・SNSリール・会社紹介動画を中心に、<strong>編集のみのご依頼から、企画・台本・撮影・編集・投稿代行まで</strong>、必要な範囲だけ対応しています。</p>
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="sec-label">01 — Skills</p>
+    <div class="sec-head">
+      <h2>スキル一覧</h2>
+      <p>動画編集を主軸に、実際に実務で対応している範囲を明記しています。得意なのは、<strong>企業の採用動画・SNS向けショート動画（縦型リール）</strong>です。</p>
     </div>
-    <ul class="intro-list">
-      <li><strong>動画編集のみの依頼も歓迎</strong> — SNS運用まるごとの契約は不要です</li>
-      <li><strong>対応エリア：編集は全国リモート対応／撮影は長野県内対応</strong></li>
-      <li><strong>法人3社と契約中</strong></li>
-      <li>自社Instagramアカウント運用中（<a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a>）</li>
-      <li><strong>対応領域：</strong>動画編集／動画制作／SNS運用／Web制作／MEO対策</li>
-      <li><strong>編集ソフト：</strong>Premiere Pro／CapCut</li>
-      <li><strong>稼働時間：</strong>平日3日〜／1日6時間〜（目安）</li>
-    </ul>
+
+    <div class="skill-grid">
+      <div class="skill">
+        <div class="skill-head"><h3>Premiere Pro</h3><span class="tool">MAIN TOOL</span></div>
+        <p><strong>主力ツール。</strong>カット編集、テロップ作成、音量調整、BGM・SEの配置、書き出しまで一連の編集を担当。企業の採用動画・会社紹介動画の編集で日常的に使用しています。</p>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><h3>CapCut</h3><span class="tool">SHORT VIDEO</span></div>
+        <p><strong>ショート動画向けに使用。</strong>テンポの速い縦型リールの編集や、SNSのトレンドに合わせた素早い仕上げに対応しています。</p>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><h3>ショート動画編集</h3><span class="tool">REELS / SHORTS</span></div>
+        <p>Instagramリールを中心とした<strong>縦型（9:16）ショート動画</strong>が主領域です。冒頭で興味を引く構成、最後まで見られるテンポづくりを意識して編集します。対応ジャンルは採用動画、企業・店舗の紹介、インタビュー、参加型企画など。</p>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><h3>字幕・テロップ</h3><span class="tool">CAPTION</span></div>
+        <p>音声なしでも内容が伝わる<strong>フルテロップ</strong>、要点を際立たせる強調テロップに対応。話し言葉を読みやすい文章に整え、スマホで読める文字量・タイミングに調整します。</p>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><h3>BGM・SE</h3><span class="tool">SOUND</span></div>
+        <p>映像の雰囲気に合わせた<strong>BGM選定と音量バランスの調整</strong>、場面転換や強調に合わせた<strong>効果音（SE）の配置</strong>まで対応。声が聞き取りやすい音づくりを基本にしています。</p>
+      </div>
+      <div class="skill">
+        <div class="skill-head"><h3>SNS投稿・企画</h3><span class="tool">SNS</span></div>
+        <p>編集に加えて、<strong>企画・台本作成、キャプション作成、投稿代行、プロフィール改善、数値を見ての改善提案</strong>まで実務経験があります。編集者として入り、必要に応じて運用面もお手伝いできます。</p>
+      </div>
+    </div>
+
+    <p class="genre-line">編集できる動画：<span>採用動画</span><i>/</i><span>SNSリール</span><i>/</i><span>会社紹介動画</span><i>/</i><span>インタビュー動画</span><i>/</i><span>参加型企画</span></p>
+
+    <div class="honest-note"><strong>対応範囲について：</strong>上記が現在の実務範囲です。ご希望の仕上がりイメージや素材を共有いただければ、対応できること・できないことを正直にお伝えしたうえで進めます。</div>
   </section>
 
   <!-- WORKS -->
   <section id="works">
     <p class="sec-label">02 — Works</p>
     <div class="sec-head">
-      <h2>実績</h2>
-      <p>代表作3本です。各作品に<strong>担当業務（企画・撮影・編集のどこまで担当したか）</strong>を明記しています。タップすると、実際に公開されているInstagramの動画をご覧いただけます。</p>
+      <h2>制作実績</h2>
+      <p>代表作3本です。各作品に<strong>担当工程・編集で工夫した部分・成果</strong>を明記しています。リンク先で、実際に公開されているInstagramの動画をご覧いただけます。</p>
     </div>
 
     <div class="pickup">
       <p class="sec-label">Pick Up — Works &amp; Role</p>
       <h2>まず見てほしい、3本</h2>
-      <p class="pickup-lead">編集スキルと作風が分かる代表作です。全作品で編集を担当しています。企画・撮影まで担当した範囲も、あわせてご確認ください。</p>
+      <p class="pickup-lead">全作品で編集を担当しています。企画・撮影まで担当した範囲もあわせてご確認ください。</p>
       <div class="pick-list">
-        <a class="pick-item" href="https://www.instagram.com/reel/Dd8qDg6MWi3/" target="_blank" rel="noopener">
+
+        <article class="pick-item">
           <span class="pick-no">01</span>
           <div>
-            <h3>「長野で、長く働きたい人へ。」</h3>
-            <p>日特工業株式会社の採用動画シリーズ代表作。長野で働くことの魅力を、現場の言葉で伝える1本です。</p>
-            <span class="pick-roles"><span class="role">担当：企画・台本</span><span class="role">担当：撮影</span><span class="role role-solid">担当：編集</span></span>
-            <span class="pick-edit">担当範囲：企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</span>
-            <span class="pick-tags">採用動画 ／ 日特工業株式会社 ／ @nittoku_kogyo_omachi</span>
+            <h3><a href="https://www.instagram.com/reel/Dd8qDg6MWi3/" target="_blank" rel="noopener">「長野で、長く働きたい人へ。」</a></h3>
+            <p class="pick-desc">日特工業株式会社の採用動画シリーズ代表作。長野で働くことの魅力を、現場の言葉で伝える1本です。</p>
+            <span class="pick-roles"><span class="role">企画・台本</span><span class="role">撮影</span><span class="role role-solid">編集</span></span>
+            <dl class="pick-detail">
+              <div><dt>担当工程</dt><dd>企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</dd></div>
+              <div><dt>編集で工夫した部分</dt><dd>冒頭で「長野で、長く働きたい人へ。」と届けたい相手を明示し、現場で働く人の声がそのまま伝わるよう、カットのつなぎとテロップで言葉を引き立てる編集にしました。</dd></div>
+              <div><dt>成果・位置づけ</dt><dd>同社の採用動画シリーズの代表作として公開中。シリーズ全体を継続して制作しています。</dd></div>
+            </dl>
+            <span class="pick-tags">採用動画 ／ 日特工業株式会社 ／ @nittoku_kogyo_omachi</span><br>
+            <a class="pick-watch" href="https://www.instagram.com/reel/Dd8qDg6MWi3/" target="_blank" rel="noopener">Instagramで動画を見る →</a>
           </div>
           <span class="pick-arrow">→</span>
-        </a>
-        <a class="pick-item" href="https://www.instagram.com/reel/DfWxLHCSa4r/" target="_blank" rel="noopener">
+        </article>
+
+        <article class="pick-item">
           <span class="pick-no">02</span>
           <div>
-            <h3>「この機械、実は300万円。使っている先輩も、最初は未経験でした。」</h3>
-            <p>増田登記測量事務所（マッソク）の採用動画。測量機器と、未経験スタートの先輩を紹介します。</p>
-            <span class="pick-roles"><span class="role">担当：企画・台本</span><span class="role">担当：撮影</span><span class="role role-solid">担当：編集</span></span>
-            <span class="pick-edit">担当範囲：企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</span>
-            <span class="pick-tags">採用動画 ／ 増田測量 ／ @massoku</span>
+            <h3><a href="https://www.instagram.com/reel/DfWxLHCSa4r/" target="_blank" rel="noopener">「この機械、実は300万円。使っている先輩も、最初は未経験でした。」</a></h3>
+            <p class="pick-desc">増田登記測量事務所（マッソク）の採用動画。測量機器と、未経験スタートの先輩を紹介します。</p>
+            <span class="pick-roles"><span class="role">企画・台本</span><span class="role">撮影</span><span class="role role-solid">編集</span></span>
+            <dl class="pick-detail">
+              <div><dt>担当工程</dt><dd>企画・台本 ／ 撮影 ／ 編集 — 全工程を担当</dd></div>
+              <div><dt>編集で工夫した部分</dt><dd>「300万円」という数字を冒頭のフックに置き、専門的な仕事を初めて見る人にも分かる流れに構成。未経験から始めた先輩の話につなげることで、応募への不安を下げる編集を意識しました。</dd></div>
+              <div><dt>成果・位置づけ</dt><dd>同事務所の採用動画として公開中。企画から納品まで一貫して担当した事例です。</dd></div>
+            </dl>
+            <span class="pick-tags">採用動画 ／ 増田測量 ／ @massoku</span><br>
+            <a class="pick-watch" href="https://www.instagram.com/reel/DfWxLHCSa4r/" target="_blank" rel="noopener">Instagramで動画を見る →</a>
           </div>
           <span class="pick-arrow">→</span>
-        </a>
-        <a class="pick-item" href="https://www.instagram.com/reel/DZ9ul5UJoX9/" target="_blank" rel="noopener">
+        </article>
+
+        <article class="pick-item">
           <span class="pick-no">03</span>
           <div>
-            <h3>「『自由に撮ってOKな写るんです』を穂高駅に置いてみた」</h3>
-            <p>駅にカメラを置く参加型の実験企画リール。通りかかった人の一瞬が集まる、自社メディアならではの企画です。</p>
-            <span class="pick-roles"><span class="role">担当：企画</span><span class="role">担当：撮影（設置）</span><span class="role role-solid">担当：編集</span></span>
-            <span class="pick-edit">担当範囲：企画 ／ 撮影（カメラ設置） ／ 編集 — 自社企画のため全工程を担当</span>
-            <span class="pick-tags">参加型企画 ／ いいね 4,000超 ・ コメント 97件 ／ @yoshiki_sns.nagano</span>
+            <h3><a href="https://www.instagram.com/reel/DZ9ul5UJoX9/" target="_blank" rel="noopener">「『自由に撮ってOKな写るんです』を穂高駅に置いてみた」</a></h3>
+            <p class="pick-desc">駅にカメラを置く参加型の実験企画リール。通りかかった人の一瞬が集まる、自社メディアならではの企画です。</p>
+            <span class="pick-roles"><span class="role">企画</span><span class="role">撮影（設置）</span><span class="role role-solid">編集</span></span>
+            <dl class="pick-detail">
+              <div><dt>担当工程</dt><dd>企画 ／ 撮影（カメラ設置） ／ 編集 — 自社企画のため全工程を担当</dd></div>
+              <div><dt>編集で工夫した部分</dt><dd>偶然集まったカットだけを材料に、次に何が起きるか気になる順番でつなぎ直し、参加した人の一瞬一瞬が積み重なっていく流れを作りました。</dd></div>
+              <div><dt>成果</dt><dd>いいね 4,000超 ・ コメント 97件（自社アカウント @yoshiki_sns.nagano で公開）</dd></div>
+            </dl>
+            <span class="pick-tags">参加型企画 ／ 自社メディア運用 ／ @yoshiki_sns.nagano</span><br>
+            <a class="pick-watch" href="https://www.instagram.com/reel/DZ9ul5UJoX9/" target="_blank" rel="noopener">Instagramで動画を見る →</a>
           </div>
           <span class="pick-arrow">→</span>
-        </a>
+        </article>
+
+      </div>
+    </div>
+
+    <p class="sec-label" style="margin-top:56px">Experience — 実務経験と担当した作業</p>
+    <div class="exp-list">
+      <div class="exp-row">
+        <h3>法人 3社の制作・運用<small>継続契約での実務</small></h3>
+        <p>現在、<strong>法人3社と契約中</strong>で、企業の動画制作・SNS運用を継続して担当しています。単発の編集だけでなく、<strong>企画・台本作成 → 撮影 → 編集 → 投稿 → 数値を見ての改善提案</strong>という一連の流れを実務で回してきました。</p>
+      </div>
+      <div class="exp-row">
+        <h3>日特工業株式会社<small>建設・設備メンテナンス／長野県大町市</small></h3>
+        <p>採用動画シリーズを担当。<strong>担当作業：企画・台本、撮影、編集、投稿まわり</strong>。現場で働く人の魅力を伝える採用コンテンツを継続制作しています。</p>
+      </div>
+      <div class="exp-row">
+        <h3>増田登記測量事務所（マッソク）<small>測量／採用動画</small></h3>
+        <p>採用動画を担当。<strong>担当作業：企画・台本、撮影、編集</strong>。専門職の仕事を、未経験の応募者にも伝わる形に翻訳する制作を行っています。</p>
+      </div>
+      <div class="exp-row">
+        <h3>自社メディア運用<small>Instagram @yoshiki_sns.nagano</small></h3>
+        <p>自身のアカウントを企画から投稿まで運用し、参加型リールで<strong>いいね 5,200超</strong>の実績があります。作る側だけでなく、投稿して反応を見る側の感覚を持って編集できます。</p>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE -->
-  <section id="service">
-    <p class="sec-label">03 — Service</p>
+  <!-- WORK STYLE -->
+  <section id="workstyle">
+    <p class="sec-label">03 — Work Style</p>
     <div class="sec-head">
-      <h2>依頼できること</h2>
-      <p>まずは<strong>動画編集だけ</strong>でも大丈夫です。単発の動画1本から、毎月の継続制作・運用まで。必要な範囲だけご依頼ください。</p>
-    </div>
-    <div class="pattern-grid" aria-label="依頼パターン">
-      <div class="pattern"><b>PATTERN A</b><h4>編集のみ</h4><p>全国リモート対応。撮影済み素材をお預かりし、カット・テロップ・音／テンポ調整まで編集します。</p></div>
-      <div class="pattern"><b>PATTERN B</b><h4>撮影＋編集</h4><p>長野県内は撮影対応。企画・台本から撮影、編集まで一貫して担当します。</p></div>
-      <div class="pattern"><b>PATTERN C</b><h4>SNS運用まるごと</h4><p>必要な方のみ。投稿代行・プロフィール改善・分析・改善提案まで対応します。</p></div>
-    </div>
-    <div class="svc-list">
-      <div class="svc-row"><span class="num">01</span><h3>動画編集</h3><p><strong>単体依頼OK／全国リモート対応。</strong>縦型リール・採用動画・会社紹介動画の編集。テロップ、音、テンポまでスマホで見やすい形に仕上げます。Premiere Pro／CapCut対応。</p></div>
-      <div class="svc-row"><span class="num">02</span><h3>SNS運用</h3><p>戦略設計・企画、台本作成、撮影・動画編集、投稿代行、プロフィール改善、分析・改善提案まで。採用力の強化、認知拡大・ブランディング、集客・問い合わせの促進を支援します。</p></div>
-      <div class="svc-row"><span class="num">03</span><h3>Web制作</h3><p>ホームページ・LP制作、採用サイト／採用ページ制作。「Web制作を、もっと身近に」をコンセプトに、SNSとつながるWebを制作します。</p></div>
-      <div class="svc-row"><span class="num">04</span><h3>MEO対策</h3><p>Googleマップ（MEO）とAI検索（AIO）対策で「見つかる、選ばれる」お店・会社づくりを支援。SNS × MEO・AIO × Web制作を組み合わせた集客が可能です。</p></div>
+      <h2>希望する働き方</h2>
+      <p>リモートで、継続的にチームの力になる働き方を希望しています。</p>
     </div>
 
-    <p class="sec-label" style="margin-top:48px">動画編集・動画制作の内訳</p>
-    <div class="detail-grid">
-      <div class="detail"><b>01</b><h4>企画・台本作成</h4><p>誰に、何を届けるかから設計。フックのある冒頭と、最後まで見られる構成で台本を作ります。</p></div>
-      <div class="detail"><b>02</b><h4>撮影</h4><p>現場にお伺いして撮影。インタビューの引き出し方まで含めて、自然な表情を撮ります。</p></div>
-      <div class="detail"><b>03</b><h4>動画編集</h4><p>テロップ、音、テンポまでスマホで見やすい縦型編集。サムネイル（カバー）の方向性も含めて仕上げます。</p></div>
-      <div class="detail"><b>04</b><h4>投稿代行</h4><p>キャプション、ハッシュタグ、投稿時間まで含めた投稿代行。運用の手間を丸ごとお任せいただけます。</p></div>
-      <div class="detail"><b>05</b><h4>プロフィール改善</h4><p>動画を見た人が次に取る行動まで考えて、プロフィール文やハイライトを整えます。</p></div>
-      <div class="detail"><b>06</b><h4>分析・改善提案</h4><p>再生数や反応を見て、次の一本に活かす改善提案。数字だけで終わらせません。</p></div>
-    </div>
-    <p class="genre-line"><span>動画編集のみ</span><i>/</i><span>撮影＋編集</span><i>/</i><span>SNS運用</span><i>/</i><span>Web制作</span><i>/</i><span>MEO対策</span><i>/</i><span>採用動画</span><i>/</i><span>SNSリール</span><i>/</i><span>会社紹介</span></p>
+    <dl class="ws-table" style="margin-top:0">
+      <div><dt>勤務形態</dt><dd>フルリモート希望<small>編集業務は全国どこからでも対応可能です</small></dd></div>
+      <div><dt>契約形態</dt><dd>業務委託 ／ アルバイト・パートタイム<small>形態はご相談に応じます</small></dd></div>
+      <div><dt>稼働日数</dt><dd>週3日程度</dd></div>
+      <div><dt>稼働時間</dt><dd>月80〜90時間程度を目安<small>曜日・時間帯の固定など、チームの運用に合わせて調整できます</small></dd></div>
+      <div><dt>希望する期間</dt><dd>継続・長期のお仕事を希望<small>単発で終わらず、作風や運用を理解しながら長く関わる形を希望しています</small></dd></div>
+      <div><dt>撮影対応</dt><dd>長野県内であれば撮影対応可<small>編集に加えて撮影も必要な案件では、プラス材料としてご検討ください</small></dd></div>
+      <div><dt>拠点</dt><dd>長野県大町市</dd></div>
+    </dl>
 
-    <p class="sec-label" style="margin-top:56px">Flow — 制作の流れ</p>
+    <div class="trust-grid" aria-label="安心して任せていただくために">
+      <div class="trust"><b>台本・構成を事前に共有</b><span>撮影・編集に入る前に構成を確認いただく進め方に慣れています。完成後の認識のズレを減らせます。</span></div>
+      <div class="trust"><b>確認・修正のフローを遵守</b><span>クライアントワークで「確認依頼 → 修正 → 納品」の流れを継続して回してきた実績があります。</span></div>
+      <div class="trust"><b>法人との継続実績</b><span>法人3社と継続契約中。一度きりでなく、継続して任せていただいていることが信頼の証しだと考えています。</span></div>
+    </div>
+
+    <p class="sec-label" style="margin-top:56px">Flow — 仕事の進め方</p>
     <div class="flow-list">
       <div class="flow-item"><b>STEP 01</b><h3>ヒアリング</h3><p>目的・ターゲット・伝えたいことを伺います</p></div>
       <div class="flow-item"><b>STEP 02</b><h3>企画・台本</h3><p>構成と台本を作成し、事前に共有します</p></div>
-      <div class="flow-item"><b>STEP 03</b><h3>撮影</h3><p>現場で撮影。所要時間は事前に調整します</p></div>
-      <div class="flow-item"><b>STEP 04</b><h3>編集</h3><p>縦型リール向けに編集します</p></div>
+      <div class="flow-item"><b>STEP 03</b><h3>撮影</h3><p>必要な場合のみ。長野県内は対応可能です</p></div>
+      <div class="flow-item"><b>STEP 04</b><h3>編集</h3><p>Premiere Pro／CapCutで縦型を中心に編集します</p></div>
       <div class="flow-item"><b>STEP 05</b><h3>確認・修正</h3><p>ご確認いただき、修正に対応します</p></div>
       <div class="flow-item"><b>STEP 06</b><h3>納品・投稿</h3><p>納品、または投稿代行まで対応します</p></div>
     </div>
   </section>
 
   <!-- PROFILE -->
-  <section>
+  <section id="profile">
     <p class="sec-label">04 — Profile</p>
     <div class="sec-head"><h2>プロフィール</h2></div>
     <div class="profile-grid" style="margin-top:20px">
-      <p>長野県大町市を拠点とするフリーランス／個人事業です。まずは実績の動画と担当範囲をご覧いただき、作風と依頼できる範囲が合うかご判断ください。</p>
+      <p>長野県大町市を拠点とするフリーランスの動画編集者です。動画編集を主軸に、SNS運用の実務経験を補足として持っています。まずは実績の動画とスキルをご覧いただき、チームに合うかご判断ください。</p>
       <dl class="profile-table" style="margin:0">
         <div><dt>名前</dt><dd>中村 ／ 北アルプスメディア</dd></div>
-        <div><dt>肩書き</dt><dd>動画編集 ・ 動画制作（フリーランス）</dd></div>
+        <div><dt>職種</dt><dd>動画編集者（フリーランス）</dd></div>
         <div><dt>拠点</dt><dd>長野県大町市</dd></div>
-        <div><dt>依頼形態</dt><dd>編集のみ ／ 撮影＋編集 ／ SNS運用まるごと</dd></div>
-        <div><dt>対応エリア</dt><dd>編集：全国リモート ／ 撮影：長野県内</dd></div>
-        <div><dt>契約</dt><dd>法人 3社と契約中</dd></div>
-        <div><dt>対応領域</dt><dd>動画編集 ／ SNS運用 ／ Web制作 ／ MEO対策</dd></div>
-        <div><dt>編集ソフト</dt><dd>Premiere Pro ／ CapCut</dd></div>
-        <div><dt>稼働時間</dt><dd>平日3日〜 ／ 1日6時間〜（目安）</dd></div>
+        <div><dt>使用ツール</dt><dd>Premiere Pro ／ CapCut</dd></div>
+        <div><dt>主領域</dt><dd>ショート動画編集 ／ 採用動画 ／ SNSコンテンツ</dd></div>
+        <div><dt>実務経験</dt><dd>法人 3社の動画制作・SNS運用を継続担当</dd></div>
+        <div><dt>勤務形態</dt><dd>フルリモート希望 ／ 業務委託・アルバイト対応</dd></div>
+        <div><dt>稼働</dt><dd>週3日程度 ／ 月80〜90時間 目安</dd></div>
+        <div><dt>撮影</dt><dd>長野県内対応可</dd></div>
         <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">@yoshiki_sns.nagano</a></dd></div>
-        <div><dt>ホームページ</dt><dd><a href="https://kitaalps-media.jp/" target="_blank" rel="noopener">kitaalps-media.jp</a></dd></div>
         <div><dt>メール</dt><dd><a href="mailto:nakamurayoshiki3@gmail.com">nakamurayoshiki3@gmail.com</a></dd></div>
         <div><dt>電話</dt><dd><a href="tel:08032110412">080-3211-0412</a></dd></div>
       </dl>
     </div>
+    <p class="sub-note">補足：Web制作・MEO対策の経験もありますが、本ページでは動画編集を主軸に紹介しています。業務内容に含まれていれば、SNS運用とあわせてご相談いただけます。所属屋号（北アルプスメディア）の公式サイトは <a href="https://kitaalps-media.jp/" target="_blank" rel="noopener" style="font-weight:700">kitaalps-media.jp</a> です。</p>
   </section>
 
   <!-- CONTACT -->
   <div class="contact" id="contact">
     <p class="sec-label">Contact</p>
-    <h2>動画編集のみのご相談も、歓迎します</h2>
-    <p>「撮影済みの素材があるので、編集だけ頼みたい」「まず1本だけ試したい」というご相談で大丈夫です。編集は全国リモート対応、撮影が必要な場合は長野県内まで対応します。SNS運用・Web・MEOのご相談も可能です。</p>
+    <h2>お仕事のご相談はこちらから</h2>
+    <p>動画編集・SNS運用の求人、業務委託、アルバイトのご相談をお待ちしています。「編集だけ頼みたい」「週3日程度で継続的に入ってほしい」といったご相談で大丈夫です。編集はフルリモート対応、撮影が必要な場合は長野県内まで対応します。</p>
     <div class="cta-row" style="margin-top:0">
-      <a class="btn btn-solid" href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram DMで相談する</a>
-      <a class="btn" href="mailto:nakamurayoshiki3@gmail.com?subject=SNS%E9%81%8B%E7%94%A8%E3%83%BB%E5%8B%95%E7%94%BB%E5%88%B6%E4%BD%9C%E3%81%AE%E7%9B%B8%E8%AB%87">メールで相談する</a>
+      <a class="btn btn-solid" href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram DMで連絡する</a>
+      <a class="btn" href="mailto:nakamurayoshiki3@gmail.com?subject=%E5%8B%95%E7%94%BB%E7%B7%A8%E9%9B%86%E3%83%BBSNS%E9%81%8B%E7%94%A8%E3%81%AE%E3%81%8A%E4%BB%95%E4%BA%8B%E3%81%AE%E7%9B%B8%E8%AB%87">メールで連絡する</a>
       <a class="btn" href="tel:08032110412">電話する（080-3211-0412）</a>
-      <a class="btn" href="https://kitaalps-media.jp/" target="_blank" rel="noopener">ホームページを見る</a>
     </div>
-    <p class="contact-meta">ホームページ：<a href="https://kitaalps-media.jp/" target="_blank" rel="noopener" style="color:inherit;font-weight:700">kitaalps-media.jp</a> ／ メール：<a href="mailto:nakamurayoshiki3@gmail.com" style="color:inherit;font-weight:700">nakamurayoshiki3@gmail.com</a> ／ 電話：<a href="tel:08032110412" style="color:inherit;font-weight:700">080-3211-0412</a> ／ Instagram：@yoshiki_sns.nagano</p>
+    <p class="contact-meta">メール：<a href="mailto:nakamurayoshiki3@gmail.com" style="color:inherit;font-weight:700">nakamurayoshiki3@gmail.com</a> ／ 電話：<a href="tel:08032110412" style="color:inherit;font-weight:700">080-3211-0412</a> ／ Instagram：@yoshiki_sns.nagano</p>
   </div>
 
   <footer class="footer">
-    <span>© 北アルプスメディア — 長野県大町市</span>
-    <span><a href="https://kitaalps-media.jp/" target="_blank" rel="noopener">ホームページ</a> ・ <a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram</a> ・ <a href="mailto:nakamurayoshiki3@gmail.com">nakamurayoshiki3@gmail.com</a> ・ <a href="tel:08032110412">080-3211-0412</a></span>
+    <span>© 中村 ／ 北アルプスメディア — 長野県大町市</span>
+    <span><a href="https://www.instagram.com/yoshiki_sns.nagano/" target="_blank" rel="noopener">Instagram</a> ・ <a href="mailto:nakamurayoshiki3@gmail.com">nakamurayoshiki3@gmail.com</a> ・ <a href="tel:08032110412">080-3211-0412</a></span>
   </footer>
 </div>
 </body>
